@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.staticfiles',
-    'oze_api.api'
+    'base_api.api'
 ]
 
 MIDDLEWARE = [
@@ -47,7 +47,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'oze_api.middleware.request_exception_handler.RequestExceptionHandler',
+    'base_api.middleware.request_exception_handler.RequestExceptionHandler',
 ]
 
 ROOT_URLCONF = 'oze_api.urls'
@@ -59,7 +59,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'oze_api.wsgi.application'
+WSGI_APPLICATION = 'base_api.wsgi.application'
 
 
 # Database

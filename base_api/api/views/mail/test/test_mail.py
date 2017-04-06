@@ -17,7 +17,6 @@ class TestMail(AbstractRest):
             <body>
                 <h4>Olá Victor tudo bem?</h4>
                 <p>
-                    Este e-mail é para você poder recuperar sua senha de acesso ao painel administrativo do OZé Digital.
                 </p>
                 <p>
                     Para alterar sua senha basta clicar <a href=""" + '"' + self.base_project_url + """atualizar-senha/234234234" target="_blank">aqui</a>.
@@ -30,7 +29,7 @@ class TestMail(AbstractRest):
         """
 
         try:
-            sender = self.prepare_email(mail_to="victor.barbosa.e.makers@gmail.com",
+            sender = self.prepare_email(mail_to="victor@gmail.com",
                                         name_mail_to="Victor Barbosa",
                                         subject="Recuperar senha de acesso",
                                         content_body=html)

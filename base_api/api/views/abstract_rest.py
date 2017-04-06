@@ -100,7 +100,7 @@ class AbstractRest(RedirectView):
 
             return response_data
 
-    def prepare_email(self, mail_to, name_mail_to, subject, content_body, mail_from="OZé Digital <atendimento@oze.digital>"):
+    def prepare_email(self, mail_to, name_mail_to, subject, content_body, mail_from="BazarOn <atendimento@bazar-on.com>"):
         msg = MIMEMultipart('alternative')
         msg['Subject'] = subject
         msg['From'] = mail_from

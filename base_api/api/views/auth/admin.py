@@ -2,10 +2,10 @@
 from ...views.abstract_rest import *
 
 
-class OzeAdmin(AbstractRest):
+class Admin(AbstractRest):
 
     def __init__(self):
-        super(OzeAdmin, self).__init__()
+        super(Admin, self).__init__()
 
     def post(self, request, *args, **kwargs):
         data = json.loads(request.body)
